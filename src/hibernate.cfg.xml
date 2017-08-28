@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+	<session-factory>
+	
+		<!-- Configuracion de la conexion de base de datos -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		
+		<!-- Ubicacion de la base de datos -->
+		<property name="connection.url">jdbc:mysql://localhost:3306/Persistencia</property>
+		
+		<!-- Usuario de la base de datos -->
+		<property name="connection.username">root</property>
+		
+		<!-- Password de la base -->
+		<property name="connection.password">cryp1915tum</property>
+		
+		<!-- Diaecto SQL -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		
+		<!-- Mostrar en consola operaciones SQL -->
+		<property name="show_sql">true</property>
+		
+		<!-- Mapeo por anotaciones -->
+		<mapping class="com.tresct.dto.Tramite"></mapping> 
+		
+	</session-factory>
+</hibernate-configuration>
